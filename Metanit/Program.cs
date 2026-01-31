@@ -1,23 +1,10 @@
-﻿using Metanit;
-
-namespace MyPractice
+﻿namespace MyPractice
 {
     class Programm
     {
-        static ILogger Logger { get; set; }
         public static void Main(string[] args)
         {
-            Logger = new Logger();
 
-            var worker1 = new Worker1(Logger);
-            var worker2 = new Worker2(Logger);
-            var worker3 = new Worker3(Logger);
-
-            worker1.Work();
-            worker2.Work();
-            worker3.Work();
-
-            Console.ReadKey();
         }
     }
 }
